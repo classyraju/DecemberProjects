@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#butto").click(function(){
+                $("#clr").fadeIn();
+            });
+            $("#butto1").click(function(){
+                $("#out").fadeOut("slow");
+                
+            });
+                
+            
+
+        });
+    </script>
+</head>
+<body>
+    <button id="butto">fade</button> <br> <br>
+    <div id="clr" style="width:100px; height:100px; background-color:red;display:none;"><li>fadeIn</li>
+        <li>fade out</li>
+        <li>fade toggle</li></div>
+    <br>
+    <br>
+
+    <button id="butto1">fade out</button> <br> <br>
+    <div id="out" style="width:100px; height:100px; background-color:blue;color: white;">
+        
+    </div>
+    
+</body>
+</html>
